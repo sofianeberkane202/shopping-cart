@@ -1,0 +1,228 @@
+/* variables */
+@import url("./base/reset.css");
+@import url("./base/typography.css");
+@import url("./base/variables.css");
+
+/* layoute */
+@import url("./layoute/layout.css");
+
+/* responsivity */
+@import url("./responsivity.css");
+
+/* utilities */
+@import url("./utilities/utilities.css");
+
+/* components */
+@import url("./components/button.css");
+
+html {
+  font-size: 59.2%;
+}
+
+body {
+  position: relative;
+  font-family: var(--ff-poppins);
+  color: var(--text-color);
+  background-color: var(--white-color);
+  min-height: 100vh;
+}
+
+/*---------------- 
+  - HEADER
+------------------*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white-color);
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 5px 2px #e9ecef;
+  z-index: 50;
+}
+
+.header__logo {
+  color: var(--primary-color);
+  transition: var(--transition-short);
+  word-spacing: -5px;
+}
+
+.header__logo > span {
+  display: inline;
+}
+
+.header__logo span:nth-of-type(1) {
+  color: var(--accent-color-low-deep);
+}
+
+.header__logo:hover {
+  color: var(--primary-color-hover);
+}
+
+.header__logo:hover > span {
+  color: var(--accent-color-deep);
+}
+
+.header__cart-image {
+  position: relative;
+}
+
+.total-cart-products {
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  border-radius: 50%;
+  color: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -40%);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* ---------------- 
+  #CART
+ ----------------*/
+
+.cart {
+  position: fixed;
+  width: 500px;
+  height: 100vh;
+  padding-block: 50px 20px;
+  padding-inline: 16px;
+  border-left: 1px solid var(--accent-color-deep);
+  background-color: var(--white-color);
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: var(--transition-short) ease-in-out;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.cart.active {
+  transform: translateX(0);
+}
+
+.cart__box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cart__products-content {
+  max-height: 60vh;
+  overflow-y: auto;
+  border-block-end: 2px solid var(--text-color);
+}
+
+.cart__products-content {
+  overflow-y: auto; /* Ensure the container is scrollable */
+}
+
+.cart__products-content::-webkit-scrollbar {
+  width: 2px; /* Width of the vertical scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+.cart__products-content::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners on the scrollbar */
+}
+
+.cart__products-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.cart__title {
+  margin-block-end: 20px;
+}
+
+.cart__product-info {
+  flex: 1;
+}
+
+.close {
+  position: absolute;
+  bottom: 100%;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.cart__image-product {
+  flex-basis: 110px;
+}
+
+.cart__image-product img {
+  height: 50px;
+}
+
+input.quantity {
+  border: 1px solid var(--text-color);
+  display: inline-block;
+  width: 40px;
+  padding-left: 5px;
+  transition: var(--transition-short);
+}
+
+input.quantity[type="number"]:focus {
+  border-color: var(--accent-color-deep);
+  box-shadow: 0 0 1px 0px var(--accent-color-deep);
+}
+
+.remove-product ion-icon {
+  color: var(--selection-color);
+}
+
+.cart__buy-product {
+  margin-inline: auto;
+  margin-block-start: 30px;
+}
+
+/* ---------------- 
+  #Store
+ ------------------*/
+
+/* .store__image-product {
+  width: 300px;
+} */
+
+.store__product {
+  position: relative;
+  box-shadow: 0 0 17px 4px #e9ecef;
+  padding-block-start: 10px;
+  cursor: pointer;
+}
+
+.store__products {
+  width: 100%;
+}
+
+.store__image-product img {
+  height: 150px;
+}
+
+.add-to-cart-buttons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.add-to-cart {
+  background-color: #000;
+  padding: 10px;
+  color: var(--white-color);
+}
+
+.store__product-info {
+  flex: 1;
+  width: calc(100% - 45px);
+  padding-left: 10px;
+}
+
+.fill-shopping-icon .material-symbols-outlined {
+  font-variation-settings: "FILL" 1;
+}

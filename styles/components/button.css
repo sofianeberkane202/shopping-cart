@@ -1,0 +1,15 @@
+@import url("../main.css");
+
+.btn {
+  padding: 15px 20px;
+  transition: var(--transition-short);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-primary:is(:hover, :focus-visible) {
+  background-color: #000;
+}

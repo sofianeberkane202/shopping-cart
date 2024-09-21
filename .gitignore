@@ -1,0 +1,30 @@
+images/
+# Node modules
+node_modules/
+
+# Parcel cache
+.cache/
+.parcel-cache/
+dist/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac system files
+.DS_Store
+
+# Linux system files
+*.lock
+
+# Environment variables
+.env
+
+# Parcel production build output
+parcel-report.html
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp

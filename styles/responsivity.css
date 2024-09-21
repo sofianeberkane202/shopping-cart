@@ -1,0 +1,49 @@
+@import url("./main.css");
+
+/* 
+  - Layout
+*/
+
+/* Desktop */
+
+@media (max-width: 1170px) {
+  .container {
+    width: 992px;
+  }
+  .grid-col {
+    --grid-col: repeat(3, 1fr);
+  }
+}
+
+/* tablet */
+
+@media (max-width: 991px) {
+  .container {
+    width: 768px;
+  }
+  .grid-col {
+    --grid-col: repeat(2, 1fr);
+  }
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  body .cart {
+    width: 100%;
+  }
+
+  .grid-col {
+    --grid-col: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .grid-col {
+    --grid-col: 1fr;
+  }
+}

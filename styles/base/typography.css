@@ -1,0 +1,37 @@
+@import url("../main.css");
+
+.display-large {
+  font-size: var(--fs-header);
+  font-weight: var(--fw-semi-bold);
+  letter-spacing: -1px;
+}
+
+.label-medium {
+  font-size: var(--fs-article);
+  font-weight: var(--fw-semi-bold);
+}
+
+.label-medium-regular {
+  font-size: var(--fs-article);
+  font-weight: var(--fw-regular);
+}
+
+.label-small {
+  font-size: var(--fs-label);
+  font-weight: var(--fw-regular);
+}
+
+.label-small-bold {
+  font-size: var(--fs-label);
+  font-weight: var(--fw-semi-bold);
+}
+
+.label-logo {
+  font-size: var(--fs-logo);
+  font-weight: var(--fw-bold);
+}
+
+.label-button {
+  font-size: var(--fs-btn);
+  font-weight: var(--fw-semi-bold);
+}

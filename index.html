@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+
+    <!-- 
+      #Favicone
+    -->
+
+    <link rel="shortcut icon" href="./images/kxp_fav.png" type="image/x-icon" />
+
+    <!-- 
+      - materials icons
+    -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- 
+    - custom css
+  -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- 
+      - custom js
+    -->
+    <script type="module" src="./js/controllers/app.js"></script>
+  </head>
+  <body>
+    <!-- 
+      - #HEADER
+    -->
+    <header class="header">
+      <div class="container flex flex-between">
+        <a href="#" class="header__logo label-logo">
+          <span class="capitalize">e</span>
+          <span class="capitalize">commerce</span>
+        </a>
+
+        <button class="header__cart-image display-icon flex-center" btn-cart>
+          <span class="material-symbols-outlined"> shopping_bag </span>
+          <span class="total-cart-products flex flex-center hidden">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 
+      - #STORE
+    -->
+
+    <section class="store">
+      <div class="container">
+        <h1 class="display-large mg-block-24 capitalize text-center">
+          shop products
+        </h1>
+
+        <div class="store__products grid grid-col">
+          <!-- <article
+            class="store__product flex flex-column flex-center-y"
+            data-id="1"
+          >
+            <div class="store__image-product">
+              <img
+                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="store__product-info pd-block-16 self-x-start flex flex-column flex-between-start"
+            >
+              <p
+                class="name label-small-bold uppercase"
+                style="--fs-label: 1.4rem"
+              >
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </p>
+              <p class="price label-logo">$109.95</p>
+            </div>
+
+            <div class="add-to-cart-buttons">
+              <button class="add-to-cart display-icon-small" add-to-cart-btn>
+                <ion-icon
+                  name="bag-handle-outline"
+                  role="img"
+                  class="md hydrated"
+                ></ion-icon>
+              </button>
+
+              <button
+                class="add-to-cart display-icon-small display-hidden"
+                add-to-cart-btn
+              >
+                <ion-icon name="bag-handle" style="fill: #fff"></ion-icon>
+              </button>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      - #CARTE
+    -->
+
+    <div class="cart" cart>
+      <div class="cart__box">
+        <p class="cart__title capitalize display-large text-center">
+          your cart
+        </p>
+
+        <div class="cart__products-content grid pd-block-8">
+          <!-- <div class="cart__product flex flex-between">
+            <div class="cart__product-info flex" style="--gap: 3rem">
+              <div class="cart__image-product flex flex-center">
+                <img
+                  src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="cart__info-box uppercase grid" style="gap: 0.5rem">
+                <p class="name label-small">nike shoes</p>
+                <p class="price label-small-bold">$79.5</p>
+                <input class="quantity label-small" type="number" value="1" />
+              </div>
+            </div>
+
+            <button class="remove-product display-icon">
+              <ion-icon name="trash"></ion-icon>
+            </button>
+          </div> -->
+        </div>
+
+        <div class="cart__total flex flex-end-x">
+          <p class="flex" style="--gap: 1rem">
+            <span class="label-small-bold capitalize">total</span>
+            <span class="total label-small"
+              >$<span class="display-inline" total-cart>0.00</span></span
+            >
+          </p>
+        </div>
+
+        <button
+          class="btn btn-primary cart__buy-product capitalize label-button"
+        >
+          buy now
+        </button>
+
+        <button class="display-icon close" close-card-btn>
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 
+      - #OVERLAY
+    -->
+
+    <div class="overlay hidden"></div>
+  </body>
+</html>

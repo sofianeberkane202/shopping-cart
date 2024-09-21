@@ -1,0 +1,71 @@
+@import url("../base/variables.css");
+
+/* 
+  - FLEX
+*/
+.flex {
+  display: flex;
+  gap: var(--gap);
+}
+
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-between-start {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-x {
+  justify-content: center;
+}
+
+.flex-end-x {
+  justify-content: flex-end;
+}
+
+.flex-center-y {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.self-x-start {
+  align-self: flex-start;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* 
+  - Grid
+*/
+
+.grid {
+  display: grid;
+  gap: var(--gap);
+}
+
+.grid-col {
+  grid-template-columns: var(--grid-col);
+}
+
+/* 
+  - Container
+*/
+
+.container {
+  width: 1200px;
+  height: 100%;
+  margin-inline: auto;
+  padding-inline: 16px;
+}

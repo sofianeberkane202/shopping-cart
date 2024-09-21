@@ -1,0 +1,69 @@
+@import url("../main.css");
+
+.display-icon ion-icon {
+  font-size: var(--fs-header);
+}
+
+.display-icon-small ion-icon {
+  font-size: var(--fs-article);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mg-block-24 {
+  margin-block: 24px;
+}
+
+.pd-block-16 {
+  padding-block: 16px;
+}
+
+.pd-block-8 {
+  padding-block: 8px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 70;
+  opacity: 1;
+  transition: var(--transition-short);
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.display-hidden {
+  display: none;
+}
+
+.display-inline {
+  display: inline;
+}
+
+/* text */
+
+.text-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
