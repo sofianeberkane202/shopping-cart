@@ -7,7 +7,7 @@ export class CartView extends View {
       <div class="cart__product flex flex-between" data-id="${this.data.id}">
         <div class="cart__product-info flex" style="--gap: 3rem">
           <div class="cart__image-product flex flex-center">
-            <img src="${this.data.image}" alt="">
+            <img src="${this.data.image}" loading="lazy" alt="">
           </div>
 
           <div class="cart__info-box uppercase flex-1 grid" style="gap: 0.5rem">
