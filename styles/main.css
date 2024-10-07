@@ -226,3 +226,12 @@ input.quantity[type="number"]:focus {
 .fill-shopping-icon .material-symbols-outlined {
   font-variation-settings: "FILL" 1;
 }
+
+.store__product-info .name {
+  display: -webkit-box; /* Enable WebKit box model */
+  -webkit-box-orient: vertical; /* Set the box layout direction to vertical */
+  -webkit-line-clamp: 2; /* Limit the text to 3 lines */
+  overflow: hidden; /* Hide the overflowing content */
+  text-overflow: ellipsis; /* Add an ellipsis (...) after the truncated text */
+  white-space: normal; /* Allow text to wrap to multiple lines */
+}
